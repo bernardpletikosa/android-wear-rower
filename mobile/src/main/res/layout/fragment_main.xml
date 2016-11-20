@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    style="@style/MatchMatch"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal|center_vertical">
+
+    <ImageView
+        android:id="@+id/control_toggle"
+        style="@style/WrapWrap"
+        android:layout_centerInParent="true"
+        android:background="@drawable/idle"/>
+
+    <TextView
+        android:id="@+id/control_total"
+        style="@style/WrapWrap"
+        android:layout_below="@id/control_toggle"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="40sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="@style/MatchMatch"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal|center_vertical">
+
+    <ImageView
+        style="@style/WrapWrap"
+        android:src="@drawable/cloud"/>
+
+</LinearLayout>

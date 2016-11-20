@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Wear Rower</string>
+
+    <string name="ma_frag_main">Workout</string>
+    <string name="ma_frag_summary">Summary</string>
+    <string name="ma_frag_cloud">Cloud</string>
+
+    <string name="ma_frag_main_finish">Finish workout</string>
+    <string name="ma_frag_main_finish_msg">Are you sure you want to finish this workout?</string>
+
+    <string name="no">NO</string>
+    <string name="yes">YES</string>
+
+</resources>

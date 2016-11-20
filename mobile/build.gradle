@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+repositories {
+    mavenCentral()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+}
+
+android {
+
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    defaultConfig {
+        applicationId "com.github.bernardpletikosa.rower"
+        minSdkVersion 18
+        targetSdkVersion 25
+        versionCode 1
+        versionName "0.0.1"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+    packagingOptions {
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+    }
+}
+
+dependencies {
+    wearApp project(':wear')
+    compile project(':shared')
+
+    compile 'com.google.android.gms:play-services-wearable:9.8.0'
+    compile 'com.google.android.gms:play-services-analytics:9.8.0'
+
+    compile 'com.android.support:recyclerview-v7:25.0.1'
+    compile 'com.android.support:design:25.0.1'
+
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.michaelpardo:activeandroid:3.1.0-SNAPSHOT'
+
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+}

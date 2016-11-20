@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    style="@style/MatchMatch"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        style="@style/WrapWrap"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/stats"/>
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/workout_total"
+            style="@style/WrapWrap"
+            android:text="0"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="50sp"/>
+
+        <TextView
+            style="@style/WrapWrap"
+            android:text="Total workouts"/>
+
+        <TextView
+            android:id="@+id/workout_total_rows"
+            style="@style/WrapWrap"
+            android:layout_marginTop="@dimen/default_padding"
+            android:text="0"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="50sp"/>
+
+        <TextView
+            style="@style/WrapWrap"
+            android:text="Total rows"/>
+
+        <LinearLayout
+            style="@style/MatchWrapHor"
+            android:layout_marginTop="@dimen/default_padding">
+
+            <TextView
+                android:id="@+id/workout_avg_rows"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="50sp"/>
+
+            <TextView
+                android:id="@+id/workout_avg_hearth_rate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="50sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/MatchWrapHor">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Average rows per minute"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Average heart rate"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
